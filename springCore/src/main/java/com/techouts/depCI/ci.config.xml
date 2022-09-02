@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.techouts.depCI.Employee" name="employee1">
+		<constructor-arg name="empId">
+			<value>142</value>
+		</constructor-arg>
+		<constructor-arg name="empName">
+			<value>Supriya</value>
+		</constructor-arg>
+		<constructor-arg name="empSal">
+			<value>23600</value>
+		</constructor-arg>
+		<constructor-arg name="empAge">
+			<value>21</value>
+		</constructor-arg>
+		<constructor-arg name="empAdd">
+			<value>Hyderabad</value>
+		</constructor-arg>
+		<constructor-arg name="set">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+			</set>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.techouts.depCI.Company" name="company">
+		<constructor-arg name="licenseNum">
+			<value>786944</value>
+		</constructor-arg>
+		<constructor-arg name="companyName">
+			<value>Techouts</value>
+		</constructor-arg>
+		<constructor-arg name="companyAddress">
+			<value>Gachibowli</value>
+		</constructor-arg>
+		<constructor-arg name="employee" ref="employee1"></constructor-arg>
+		<constructor-arg name="list">
+			<list>
+				<value>a</value>
+				<value>b</value>
+				<value>c</value>
+				<value>d</value>
+				<value>e</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="a" value="1"></entry>
+				<entry key="b" value="2"></entry>
+				<entry key="c" value="3"></entry>
+				<entry key="d" value="4"></entry>
+				<entry key="a" value="5"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.techouts.depCI.Projects" name="projects">
+		<constructor-arg name="projectName">
+			<value>Fashion factory site
+			</value>
+		</constructor-arg>
+		<constructor-arg name="projectId">
+			<value>56373</value>
+		</constructor-arg>
+		<constructor-arg name="map">
+			<map>
+				<entry key-ref="company" value-ref="employee1">
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>

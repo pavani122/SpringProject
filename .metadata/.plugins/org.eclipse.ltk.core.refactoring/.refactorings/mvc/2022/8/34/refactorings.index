@@ -1,0 +1,4 @@
+1660799172866	Move 'view' to 'WEB-INF'
+1660799182017	Move 'spring-servlet.xml' to 'WEB-INF'
+1660799825028	Move 'index.jsp' to 'webapp'
+1660801363487	Move package

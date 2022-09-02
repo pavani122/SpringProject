@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/tile/layout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/tile/header.jsp" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/tile/footer.jsp" />
+	</definition>
+
+	<!-- <definition name="index" extends="base.definition"> <put-attribute 
+		name="title" value="" /> <put-attribute name="body" value="index.jsp" /> 
+		</definition> -->
+
+	<definition name="display1" extends="base.definition">
+		<put-attribute name="title" value="Home_PAGE" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/display.jsp" />
+	</definition>
+
+	<definition name="listItems" extends="base.definition">
+		<put-attribute name="title" value="MAIN_PAGE" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/listItems.jsp" />
+	</definition>
+
+	<definition name="listMain1" extends="base.definition">
+		<put-attribute name="title" value="PLP_PAGE" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/listMain.jsp" />
+	</definition>
+
+	<definition name="listSub1" extends="base.definition">
+		<put-attribute name="title" value="PDP_PAGE" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/listSub.jsp" />
+	</definition>
+
+	<definition name="addedCart1" extends="base.definition">
+		<put-attribute name="title" value="CART_PAGE" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/addedCart.jsp" />
+	</definition>
+
+	<definition name="cart1" extends="base.definition">
+		<put-attribute name="title" value="Bag" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/cart.jsp" />
+	</definition>
+
+	<definition name="orderPlaced1" extends="base.definition">
+		<put-attribute name="title" value="Bag" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/orderPlaced.jsp" />
+	</definition>
+
+	<definition name="empty1" extends="base.definition">
+		<put-attribute name="title" value="Bag" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/empty.jsp" />
+	</definition>
+
+	<definition name="login1" extends="base.definition">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login.jsp" />
+	</definition>
+
+
+	<definition name="register1" extends="base.definition">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/registration.jsp" />
+	</definition>
+	
+	<definition name="registrate" extends="base.definition">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/registrateCompleted.jsp" />
+	</definition>
+	
+	<definition name="registrate" extends="base.definition">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/registrateCompleted.jsp" />
+	</definition>
+	
+	<definition name="error" extends="base.definition">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error.jsp" />
+	</definition>
+</tiles-definitions>

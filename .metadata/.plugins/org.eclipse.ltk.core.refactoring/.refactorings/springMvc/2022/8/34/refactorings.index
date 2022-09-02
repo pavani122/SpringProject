@@ -1,0 +1,17 @@
+1660751393732	Move 'index.jsp' to 'view'
+1660799135233	Move package
+1660801255073	Move 'view' to 'WEB-INF'
+1660801260049	Move 'index.jsp' to 'WEB-INF'
+1660801309187	Move 'index.jsp' to 'webapp'
+1660801320954	Move 'spring-servlet.xml' to 'WEB-INF'
+1660804891451	Copy file
+1660804959261	Delete element
+1660812087840	Move compilation unit
+1660812143208	Delete element
+1660826794729	Move 'formtag.jsp' to 'view'
+1660826796722	Move 'index.jsp' to 'view'
+1660826820109	Move 'index.jsp' to 'webapp'
+1660828071596	Move 'formtag.jsp' to 'WEB-INF'
+1660828076119	Move 'formtag.jsp' to 'webapp'
+1660829908178	Move 'formtag.jsp' to 'view'
+1660886523850	Move 'index.jsp' to 'view'
